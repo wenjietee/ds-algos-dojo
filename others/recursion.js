@@ -1,4 +1,4 @@
-// sum of numbers
+// ----- sum of numbers -----
 
 const numsToSum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -18,7 +18,7 @@ const sumOfNumbers = (array, sum) => {
 
 console.log(sumOfNumbers(numsToSum));
 
-// check if number is even
+// ----- check if number is even -----
 
 let testEvenNum = 10;
 
@@ -38,7 +38,7 @@ const isEven = (num) => {
 
 console.log(isEven(testEvenNum));
 
-// factorial
+// ----- factorial -----
 
 let fNum = 5;
 
@@ -56,3 +56,38 @@ const factorial = (num, total) => {
 };
 
 console.log(factorial(fNum));
+
+// ----- step counting -----
+
+let steps = 4;
+
+const countSteps = (steps) => {
+	// base case, if steps takes more than 3 return steps
+	if (steps <= 2) {
+		return steps;
+	}
+	// if steps take 1 step, -1  to reduce number of steps
+	// if steps take 2 steps, -2 to reduce number of steps
+	return countSteps(steps - 1) + countSteps(steps - 2);
+};
+
+console.log(countSteps(steps));
+
+// ----- fibonacci -----
+
+let testFibNum = 17;
+
+const isFibonacci = (num) => {
+	// base case
+	if (num === 0 || num === 1) {
+		return true;
+	}
+	// recursion
+	return isFibonacci(num - 1) - isFibonacci(num - 2);
+};
+
+if (isFibonacci(testFibNum)) {
+	console.log(testFibNum, 'is fibonacci');
+} else {
+	console.log(testFibNum, 'is not fibonacci');
+}
