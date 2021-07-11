@@ -1,6 +1,8 @@
 // linear search
 
-const arr1 = [10, 20, 80, 30, 60, 50, 110, 100, 130, 170];
+const arr1 = [
+	-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+];
 
 const linearSearch = (arr, target) => {
 	// iterate through all elements to find target
