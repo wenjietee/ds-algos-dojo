@@ -2,6 +2,7 @@ const arrayToSort = [1, 3, 5, 2, -2, 4, 6, 8, 7, 10, 8, 9, 0, -3, -1];
 
 const mergeSort = (array) => {
 	// check if array can be split
+	// base case: array length is less than  2
 	if (array.length < 2) {
 		return array;
 	}
@@ -20,7 +21,7 @@ const mergeSort = (array) => {
 const merge = (left, right) => {
 	// create new array
 	const result = [];
-	// check if left and right array is empty
+	// keep running until left and right array is empty
 	while (left.length && right.length) {
 		// find lower value
 		if (left[0] <= right[0]) {
