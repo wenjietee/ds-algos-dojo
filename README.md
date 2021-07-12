@@ -12,3 +12,5 @@ Resources
 -   [Insertion sort - Michael Sambol](https://www.youtube.com/watch?v=JU767SDMDvA)
 
 -   [Selection sort - Michael Sambol](https://www.youtube.com/watch?v=g-PGLbMth_g)
+
+-   [Binary Search - CS Dojo](https://www.youtube.com/watch?v=6ysjqCUv3K4)
