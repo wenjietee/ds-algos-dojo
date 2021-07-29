@@ -1,5 +1,6 @@
 // binary search
 // this search algo can be done assuming the array has been sorted
+// example of divide and conquer
 // from small to big
 
 const arr1 = [
@@ -41,9 +42,5 @@ if (result !== -1) console.log(`element found at index ${result}`);
 else console.log(`element not found`);
 
 /*
-   The time complexity of the above algorithm is O(log n).
-
-   Very slow compared to other search algos but the most basic
-   and easiest to implement.
-   
+   The worse case time complexity of the above algorithm is O(log n).
  */

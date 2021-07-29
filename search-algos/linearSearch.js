@@ -24,7 +24,7 @@ if (result !== -1) console.log(`element found at index ${result}`);
 else console.log(`element not found`);
 
 /*
-   The time complexity of the above algorithm is O(n).
+   The worse case time complexity of the above algorithm is O(n).
 
    Very slow compared to other search algos but the most basic
    and easiest to implement.
