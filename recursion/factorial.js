@@ -1,16 +1,12 @@
 let num = 5;
 
-const factorial = (num, total) => {
-	// set total variable, set to 1 if undefined
-	total = total || 1;
-
+const factorial = (n) => {
 	// base case if num is 1 return the total
-	if (num === 1) {
-		return total;
+	if (n === 1) {
+		return n;
 	}
-
 	// recursively decrement the num input and multiply the total
-	return factorial(num - 1, (total *= num));
+	return n * factorial(n - 1);
 };
 
 console.log(factorial(num));
