@@ -12,6 +12,7 @@ function flatDeep(arr, d = 1) {
 }
 
 // manual method w/ recursion
+// https://stackoverflow.com/questions/27266550/how-to-flatten-nested-array-in-javascript
 const flatten = (arr) => {
 	// array to hold flattened contents
 	let result = [];
