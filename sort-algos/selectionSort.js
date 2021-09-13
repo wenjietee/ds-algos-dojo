@@ -21,6 +21,7 @@ const selectionSort = (array) => {
 
 selectionSort(arrayToSort);
 
+module.exports = selectionSort;
 /*
 It's not a stable sorting algorithim 
 Big O worst case space complexity of O(1)

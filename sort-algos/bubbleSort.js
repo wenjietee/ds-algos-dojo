@@ -1,5 +1,3 @@
-const arrayToSort = [1, 3, 5, 2, -2, 4, 6, 8, 7, 10, 8, 9, 0, -3, -1];
-
 const bubbleSort = (array) => {
 	// iterate through each element
 	for (let i = 0; i < array.length; i++) {
@@ -10,10 +8,10 @@ const bubbleSort = (array) => {
 			}
 		}
 	}
-	console.log(array);
+	return array;
 };
 
-bubbleSort(arrayToSort);
+module.exports = bubbleSort;
 
 /*
 It's a stable sorting algorithim 

@@ -1,5 +1,3 @@
-const arrayToSort = [1, 3, 5, 2, -2, 4, 6, 8, 7, 10, 8, 9, 0, -3, -1];
-
 const quickSort = (array) => {
 	// base case: check if array is less than or equal to 1
 	if (array.length <= 1) {
@@ -23,6 +21,8 @@ const quickSort = (array) => {
 	return [...quickSort(leftSide), pivot, ...quickSort(rightSide)];
 };
 
+module.exports = quickSort;
+
 // another quicksort implementation https://flaviocopes.com/quicksort-javascript/
 
 // const quickSort = (originalList) => {
@@ -39,8 +39,6 @@ const quickSort = (array) => {
 
 // 	return [...quickSort(smaller), pivot, ...quickSort(bigger)];
 // };
-
-console.log(quickSort(arrayToSort));
 
 /*
 It's not a stable sorting algorithim 

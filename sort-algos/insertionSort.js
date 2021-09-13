@@ -1,5 +1,3 @@
-const arrayToSort = [1, 3, 5, 2, -2, 4, 6, 8, 7, 10, 8, 9, 0, -3, -1];
-
 const insertionSort = (array) => {
 	// iterate through each element
 	for (let i = 0; i < array.length; i++) {
@@ -11,10 +9,10 @@ const insertionSort = (array) => {
 			j -= 1;
 		}
 	}
-	console.log(array);
+	return array;
 };
 
-insertionSort(arrayToSort);
+module.exports = insertionSort;
 
 /*
 It's a stable sorting algorithim 

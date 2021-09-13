@@ -1,5 +1,3 @@
-const arrayToSort = [1, 3, 5, 2, -2, 4, 6, 8, 7, 10, 8, 9, 0, -3, -1];
-
 const mergeSort = (array) => {
 	// check if array can be split
 	// base case: array length is less than  2
@@ -43,7 +41,7 @@ const merge = (left, right) => {
 	return result;
 };
 
-console.log(mergeSort(arrayToSort));
+module.exports = mergeSort;
 
 /*
 It's a stable sorting algorithim 
