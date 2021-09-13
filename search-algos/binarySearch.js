@@ -34,12 +34,7 @@ const binarySearch = (arr, target) => {
 	return -1;
 };
 
-// run code
-let result = binarySearch(arr1, 0);
-
-// check result and log findings
-if (result !== -1) console.log(`element found at index ${result}`);
-else console.log(`element not found`);
+module.exports = binarySearch;
 
 /*
    The worse case time complexity of the above algorithm is O(log n).
