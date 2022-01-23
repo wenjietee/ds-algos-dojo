@@ -2,6 +2,8 @@
 
 Resources
 
+-   [Freecodecamp -Recursion](https://www.youtube.com/watch?v=IJDJ0kBx2LM)
+
 -   [Freecodecamp -Data Structures and Algorithms](https://www.youtube.com/watch?v=t2CEgPsws3U)
 
 -   [Mergesort - Bernard Johnson](https://www.youtube.com/watch?v=ppNZ4bmrmGs)
