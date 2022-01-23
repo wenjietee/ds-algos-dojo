@@ -38,4 +38,6 @@ module.exports = binarySearch;
 
 /*
    The worse case time complexity of the above algorithm is O(log n).
+
+   Alternate recursive approach under recursion dir
  */

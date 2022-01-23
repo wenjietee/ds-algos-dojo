@@ -14,3 +14,7 @@ isPalidrome('-_-');
 // false
 isPalidrome('pikachu');
 isPalidrome('helicopter');
+
+/**
+ * Alternate recursive approach under recursion dir
+ */
