@@ -34,3 +34,26 @@ console.log(fibMemo(30));
 const endTime2 = performance.now();
 
 console.log(`fib took ${endTime2 - startTime2} miliseconds with memo`);
+
+// with bottom up approach memo (to resolve space issue)
+const startTime3 = performance.now();
+
+const fibMemoBU = (n) => {
+    let a = 1; // fib(i-2)
+    let b = 1; // fib(i-1)
+
+    for (let i = 2; i <= n; i++) {
+        [a, b] = [b, a + b];
+    }
+
+    return b;
+};
+console.log(fibMemoBU(30));
+
+const endTime3 = performance.now();
+
+console.log(
+    `fib took ${
+        endTime3 - startTime3
+    } miliseconds with memo + bottom up approach`
+);
