@@ -1,50 +1,50 @@
 class ListNode {
-	constructor(head = null) {
-		this.head = head;
-		this.next = null;
-	}
-	// get size of linked list
-	size() {
-		let count = 0;
-		let node = this.head;
-		while (node) {
-			count++;
-			node = node.next;
-		}
+    constructor(val = null) {
+        this.val = val;
+        this.next = null;
+    }
+    // get size of linked list
+    size() {
+        let count = 0;
+        let node = this.val;
+        while (node) {
+            count++;
+            node = node.next;
+        }
 
-		return count;
-	}
+        return count;
+    }
 
-	// empty linked list
-	clear() {
-		this.head = null;
-	}
+    // empty linked list
+    clear() {
+        this.val = null;
+    }
 
-	//get first item
-	getFirst() {
-		return this.head;
-	}
+    //get first item
+    getFirst() {
+        return this.val;
+    }
 
-	//get next item
-	getNext() {
-		return this.next;
-	}
+    //get next item
+    getNext() {
+        return this.next;
+    }
 
-	//get last item
-	getLast() {
-		let last = this.head;
-		if (last) {
-			while (last.next) {
-				last = last.next;
-			}
-		}
-		return last;
-	}
+    //get last item
+    getLast() {
+        let last = this.val;
+        if (last) {
+            while (last.next) {
+                last = last.next;
+            }
+        }
+        return last;
+    }
 
-	//set next item
-	setNext(node) {
-		this.next = node;
-	}
+    //set next item
+    setNext(node) {
+        this.next = node;
+    }
 }
 
 module.exports = ListNode;
